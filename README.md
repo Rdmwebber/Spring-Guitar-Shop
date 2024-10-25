@@ -77,4 +77,20 @@ File Name:aboutUs.html
 Line Number:6
 Change: imported stylesheet from bootstrap to utilize container class 
 
+Part E:
+
+Change Log
+File Name:BootStrapData.java
+Line Number: 48 - 85
+Change: added 5 part instances and added them to repo. 
+
+Change Log
+File Name: BootStrapData.java
+Line Number: 112 - 125
+Change: added 5 product instances and added them to product repo
+
+Change Log
+File Name: BootStrapData.java
+Line Number: 110 + 46
+Change: added guard clauses so that parts and products wouldn't be re-instantiated  every time everytime program was run
 

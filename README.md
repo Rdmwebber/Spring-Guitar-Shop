@@ -94,3 +94,24 @@ File Name: BootStrapData.java
 Line Number: 110 + 46
 Change: added guard clauses so that parts and products wouldn't be re-instantiated  every time everytime program was run
 
+Part F:
+
+Change Log
+File Name: AddProductController.java
+Line Number: 177-196
+Change: added function to handle buy product request. checks inv of product returns failure or success and if success will decrement inv
+
+Change Log
+File Name: failure.html
+Line Number: all
+Change: created failure page 
+
+Change Log
+File Name: success.html
+Line Number: all
+Change: created success page 
+
+Change Log
+File Name: mainscreen.html
+Line Number: 87
+Change: added button to main html

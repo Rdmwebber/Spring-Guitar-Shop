@@ -50,6 +50,8 @@ public class BootStrapData implements CommandLineRunner {
             guitarBody.setPrice(349.99);
             guitarBody.setInv(17);
             guitarBody.setCompanyName("Fender");
+            guitarBody.setMaxInventory(50);
+            guitarBody.setMinInventory(1);
             outsourcedPartRepository.save(guitarBody);
 
             OutsourcedPart tuningPegs = new OutsourcedPart();
@@ -57,6 +59,8 @@ public class BootStrapData implements CommandLineRunner {
             tuningPegs.setPrice(49.99);
             tuningPegs.setInv(16);
             tuningPegs.setCompanyName("Gibson");
+            tuningPegs.setMaxInventory(50);
+            tuningPegs.setMinInventory(1);
 
             outsourcedPartRepository.save(tuningPegs);
 
@@ -65,6 +69,8 @@ public class BootStrapData implements CommandLineRunner {
             pickGuard.setPrice(89.99);
             pickGuard.setInv(21);
             pickGuard.setCompanyName("Yamaha");
+            pickGuard.setMaxInventory(50);
+            pickGuard.setMinInventory(1);
 
             outsourcedPartRepository.save(pickGuard);
 
@@ -73,14 +79,18 @@ public class BootStrapData implements CommandLineRunner {
             neck.setPrice(227.99);
             neck.setInv(25);
             neck.setCompanyName("Squire");
+            neck.setMaxInventory(50);
+            neck.setMinInventory(1);
 
             outsourcedPartRepository.save(neck);
 
             OutsourcedPart bridge = new OutsourcedPart();
             bridge.setName("Bridge");
             bridge.setPrice(125.99);
-            bridge.setInv(71);
+            bridge.setInv(49);
             bridge.setCompanyName("Epiphone");
+            bridge.setMaxInventory(50);
+            bridge.setMinInventory(1);
 
             outsourcedPartRepository.save(bridge);
 

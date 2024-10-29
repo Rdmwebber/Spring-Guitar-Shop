@@ -39,14 +39,13 @@ public class AddInhousePartController{
     @PostMapping("/showFormAddInPart")
     public String submitForm(@Valid @ModelAttribute("inhousepart") InhousePart part, BindingResult theBindingResult, Model theModel){
         theModel.addAttribute("inhousepart",part);
-        if(theBindingResult.hasErrors()){
+        if(theBindingResult.hasErrors()){;
             return "InhousePartForm";
         }
-        else{
-        InhousePartService repo=context.getBean(InhousePartServiceImpl.class);
+        else{InhousePartService repo=context.getBean(InhousePartServiceImpl.class);
         InhousePart ip=repo.findById((int)part.getId());
         if(ip!=null)part.setProducts(ip.getProducts());
-            repo.save(part);
+        repo.save(part);
 
         return "confirmationaddpart";}
     }

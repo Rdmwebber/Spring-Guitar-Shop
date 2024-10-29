@@ -115,3 +115,68 @@ Change Log
 File Name: mainscreen.html
 Line Number: 87
 Change: added button to main html
+
+Part G:
+
+Change Log
+File Name: BootStrapData.java
+Line Number: 53-54, 62-63, 72-73, 82-83, 92-93
+Change: used setters to set max and min inventory amounts for demo data
+
+Change Log
+File Name: InhousePartForm.html
+Line Number: 22-26
+Change: Added input fields for max and min inventory 
+
+Change Log
+File Name: InhousePartForm.html
+Line Number: 31-34
+Change:  Moved error handling to bottom of form where it made sense to handle type error from Inventory validator
+
+Change Log
+File Name: mainscreen.html
+Line Number: 40-41, 50-51
+Change: added heading and columns for min and max inventory data
+
+
+Change Log
+File Name: OutsourcedPartForm.html
+Line Number: 24-26
+Change: Added input fields for max and min inventory 
+
+Change Log
+File Name: OutsourcedPartForm.html
+Line Number: 31-33
+Change:  Moved error handling to bottom of form where it made sense to handle type error from Inventory validator
+
+Change Log
+File Name: Part.java
+Line Number: 20, 34-37
+Change: Added Validator tag. added fields on object for min and max inventory value. Added @min validators to ensure inputs were positive numbers
+
+Change Log
+File Name: Part.java
+Line Number: 60-66
+Change: created new overloaded constructor which accepts min and max
+
+Change Log
+File Name: Part.java
+Line Number: 60-66
+Change: created new overloaded constructor which accepts min and max
+
+Change Log
+File Name: Part.java
+Line Number: 109-128
+Change: created getters and setters for new attributes and created a validInventory method that will check inventory is between min and max
+
+
+Change Log
+File Name: PartInventoryValidator.java
+Line Number: 1-24
+Change:  Created entire Inventory validator 
+
+Change Log
+File Name: ValidPartInventory.java
+Line Number: 1-19
+Change: created validator interface
+

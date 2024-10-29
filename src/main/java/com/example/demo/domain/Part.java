@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import com.example.demo.validators.ValidDeletePart;
+import com.example.demo.validators.ValidPartInventory;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -16,6 +17,7 @@ import java.util.Set;
  */
 @Entity
 @ValidDeletePart
+@ValidPartInventory
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="part_type",discriminatorType = DiscriminatorType.INTEGER)
 @Table(name="Parts")
@@ -26,8 +28,13 @@ public abstract class Part implements Serializable {
     String name;
     @Min(value = 0, message = "Price value must be positive")
     double price;
+
     @Min(value = 0, message = "Inventory value must be positive")
     int inv;
+    @Min(value = 0, message = "Max inventory value must be positive")
+    int maxInventory;
+    @Min(value = 0, message = "Min Inventory value must be positive")
+    int minInventory;
 
     @ManyToMany
     @JoinTable(name="product_part", joinColumns = @JoinColumn(name="part_id"),
@@ -48,6 +55,15 @@ public abstract class Part implements Serializable {
         this.name = name;
         this.price = price;
         this.inv = inv;
+    }
+
+    public Part(long id, String name, double price, int inv, int maxInventory, int minInventory) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.inv = inv;
+        this.maxInventory = maxInventory;
+        this.minInventory = minInventory;
     }
 
     public long getId() {
@@ -88,6 +104,26 @@ public abstract class Part implements Serializable {
 
     public void setProducts(Set<Product> products) {
         this.products = products;
+    }
+
+    public int getMaxInventory() {
+        return maxInventory;
+    }
+
+    public void setMaxInventory(int maxInventory) {
+        this.maxInventory = maxInventory;
+    }
+
+    public int getMinInventory() {
+        return minInventory;
+    }
+
+    public void setMinInventory(int minInventory) {
+        this.minInventory = minInventory;
+    }
+
+    public boolean validInventory() {
+        return inv >= minInventory && inv <= maxInventory;
     }
 
     public String toString(){

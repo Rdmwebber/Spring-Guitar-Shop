@@ -177,6 +177,40 @@ Change:  Created entire Inventory validator
 
 Change Log
 File Name: ValidPartInventory.java
-Line Number: 1-19
+Line Number: 1-19       
 Change: created validator interface
+
+Part H:
+
+Change Log
+File Name: EnufPartsValidator.java
+Line Number: 37
+Change: created if statement to determine if updated product quality would take inventory below minimum threshold.
+
+Change Log
+File Name: Part.java
+Line Number: 23-24
+Change: Applied new min and max inventory validators to class
+
+Change Log
+File Name: PartMaxInventoryValidator.java
+Line Number: All
+Change: Created validator to check if inventory exceeds maximum inventory value
+
+Change Log
+File Name: PartMinInventoryValidator.java
+Line Number: All
+Change: Created validator to check if inventory is below minimum inventory value
+
+Change Log
+File Name: ValidPartMaxInventory.java
+Line Number: All
+Change: Created interface for max inventory validator
+
+Change Log
+File Name: ValidPartMaxInventory.java
+Line Number: All
+Change: Created interface for min inventory validator
+
+
 

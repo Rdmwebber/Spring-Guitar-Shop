@@ -212,5 +212,12 @@ File Name: ValidPartMaxInventory.java
 Line Number: All
 Change: Created interface for min inventory validator
 
+Part I: 
+
+Change Log
+File Name: PartTest.java
+Line Number: 160 - 176
+Change: created two new unit test methods to test min and max inventory attributes
+
 
 

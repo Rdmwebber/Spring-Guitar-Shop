@@ -219,5 +219,23 @@ File Name: PartTest.java
 Line Number: 160 - 176
 Change: created two new unit test methods to test min and max inventory attributes
 
+Part J:
+
+Change Log
+File Name: ValidDeletePart.java
+Line Number: All
+Change: Deleted File
+
+Change Log
+File Name: DeletePartValidator.java
+Line Number: All
+Change: Deleted File
+
+Change Log
+File Name: Part.java
+Line Number: 20
+Change: removed Delete part validator from class
+
+
 
 

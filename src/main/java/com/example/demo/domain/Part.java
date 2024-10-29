@@ -1,6 +1,5 @@
 package com.example.demo.domain;
 
-import com.example.demo.validators.ValidDeletePart;
 import com.example.demo.validators.ValidPartInventory;
 import com.example.demo.validators.ValidPartMaxInventory;
 import com.example.demo.validators.ValidPartMinInventory;
@@ -18,7 +17,6 @@ import java.util.Set;
  *
  */
 @Entity
-@ValidDeletePart
 @ValidPartInventory
 @ValidPartMinInventory
 @ValidPartMaxInventory

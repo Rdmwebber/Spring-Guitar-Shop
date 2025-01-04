@@ -1,14 +1,3 @@
-D287 Java Frameworks PA
-Ryan Webber
-Student ID: 011889933
-
-GIT REPOSITORY URL: https://gitlab.com/wgu-gitlab-environment/student-repos/rweb217/d287-java-frameworks/-/tree/guitar-shop
-
-
-Change Log
-File Name: 
-Line Number: 
-Change: 
 
 Part C: Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
